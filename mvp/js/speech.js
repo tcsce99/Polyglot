@@ -12,42 +12,88 @@
 
   /* ---------- Text to speech ---------- */
   let voicesCache = [];
+  let voicesReady = false;
+  function refreshVoices() {
+    if (!window.speechSynthesis) return;
+    const list = speechSynthesis.getVoices() || [];
+    voicesCache = list;
+    if (list.length) voicesReady = true;
+  }
   if (window.speechSynthesis) {
-    const loadVoices = function () { voicesCache = speechSynthesis.getVoices(); };
-    loadVoices();
-    speechSynthesis.onvoiceschanged = loadVoices;
+    refreshVoices();
+    speechSynthesis.onvoiceschanged = refreshVoices;
   }
 
+  /* Voices load asynchronously on some engines (notably Android WebView / TWA):
+     getVoices() is empty until 'voiceschanged' fires. Wait briefly for them. */
+  function ensureVoices() {
+    if (voicesReady || !window.speechSynthesis) return Promise.resolve();
+    return new Promise(function (resolve) {
+      let done = false;
+      const finish = function () { if (done) return; done = true; refreshVoices(); resolve(); };
+      const poll = setInterval(function () { refreshVoices(); if (voicesReady) { clearInterval(poll); finish(); } }, 120);
+      setTimeout(function () { clearInterval(poll); finish(); }, 1500);
+    });
+  }
+
+  function norm(l) { return String(l || "").toLowerCase().replace("_", "-"); }
+
   function pickVoice(lang) {
-    const prefix = lang.split("-")[0].toLowerCase();
-    let v = voicesCache.find(function (x) { return x.lang.toLowerCase() === lang.toLowerCase(); });
-    if (!v) v = voicesCache.find(function (x) { return x.lang.toLowerCase().indexOf(prefix) === 0; });
+    const want = norm(lang), prefix = want.split("-")[0];
+    let v = voicesCache.find(function (x) { return norm(x.lang) === want; });
+    if (!v) v = voicesCache.find(function (x) { return norm(x.lang).indexOf(prefix) === 0; });
     return v || null;
   }
 
+  /* Does this device actually have an installed voice for the language? */
+  function hasVoice(lang) {
+    if (NativeTTS) return true;
+    if (!window.speechSynthesis) return false;
+    return !!pickVoice(lang);
+  }
+
+  /* Returns a Promise<{ ok, reason }>. reason ∈ 'unsupported' | 'no-voice' | 'error'. */
   async function speak(text, lang, rate) {
     rate = rate || 0.9;
     if (NativeTTS) {
-      try { await NativeTTS.speak({ text: text, lang: lang, rate: rate, category: "playback" }); return true; }
+      try { await NativeTTS.speak({ text: text, lang: lang, rate: rate, category: "playback" }); return { ok: true }; }
       catch (e) { /* fall through to web */ }
     }
-    if (!window.speechSynthesis) return false;
+    if (!window.speechSynthesis) return { ok: false, reason: "unsupported" };
+    await ensureVoices();
     return new Promise(function (resolve) {
-      speechSynthesis.cancel();
+      try { speechSynthesis.cancel(); } catch (e) {}
       const u = new SpeechSynthesisUtterance(text);
       u.lang = lang; u.rate = rate;
       const v = pickVoice(lang);
       if (v) u.voice = v;
-      u.onend = function () { resolve(true); };
-      u.onerror = function () { resolve(false); };
+      let settled = false, started = false, failTimer = null, safety = null;
+      const done = function (res) {
+        if (settled) return; settled = true;
+        clearTimeout(failTimer); clearTimeout(safety);
+        resolve(res);
+      };
+      u.onstart = function () { started = true; };
+      u.onend = function () { done({ ok: true }); };
+      u.onerror = function (e) { done({ ok: false, reason: (e && e.error) || "error" }); };
+      /* If playback never starts and no matching voice is installed, the
+         language pack is missing (common on Android for Arabic/Urdu/CJK). */
+      failTimer = setTimeout(function () {
+        if (started || hasVoice(lang)) return;
+        try { speechSynthesis.cancel(); } catch (e) {}
+        done({ ok: false, reason: "no-voice" });
+      }, 3000);
+      /* Absolute backstop so an awaiting caller can never hang. */
+      safety = setTimeout(function () { done({ ok: true }); }, 20000);
       speechSynthesis.speak(u);
+      /* Work around the Chrome/Android bug where synthesis starts paused. */
+      try { speechSynthesis.resume(); } catch (e) {}
     });
   }
 
-  function ttsAvailable(lang) {
+  function ttsAvailable() {
     if (NativeTTS) return true;
-    if (!window.speechSynthesis) return false;
-    return true; // engines usually accept any lang; voice pick is best-effort
+    return !!window.speechSynthesis;
   }
 
   /* ---------- Speech recognition ---------- */
@@ -145,6 +191,8 @@
     isNative: isNative,
     speak: speak,
     ttsAvailable: ttsAvailable,
+    hasVoice: hasVoice,
+    ensureVoices: ensureVoices,
     srAvailable: srAvailable,
     listen: listen,
     normalize: normalize,

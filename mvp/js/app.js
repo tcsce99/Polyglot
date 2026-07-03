@@ -34,6 +34,48 @@
   }
   function dirAttr(cid) { return meta(cid).rtl ? ' dir="rtl"' : ""; }
 
+  /* Non-Latin scripts (Arabic, Urdu, CJK, Cyrillic) always show a romanization
+     cue so a beginner is never asked to read unfamiliar characters cold. */
+  function nonLatin(cid) { const m = meta(cid); return !!(m && m.latin === false); }
+  function romanCue(item, cid) {
+    return (nonLatin(cid) && item && item.r) ? '<div class="prompt-roman">' + esc(item.r) + "</div>" : "";
+  }
+
+  /* Non-blocking toast — used to explain silent audio failures (e.g. a missing
+     Android voice pack) instead of leaving the user tapping 🔊 with no result. */
+  let toastTimer = null;
+  function toast(msg) {
+    let t = document.getElementById("toast");
+    if (!t) { t = document.createElement("div"); t.id = "toast"; t.className = "toast"; document.body.appendChild(t); }
+    t.textContent = msg; t.classList.add("show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { t.classList.remove("show"); }, 6000);
+  }
+  function ttsFailToast(reason, cid) {
+    const name = meta(cid) ? meta(cid).name : "this language";
+    if (reason === "no-voice")
+      toast("No " + name + " voice is installed on this device. Android: Settings → System → Languages & input → Text-to-speech, then install the " + name + " voice.");
+    else if (reason === "unsupported")
+      toast("Audio playback isn't supported on this device.");
+    else
+      toast("Couldn't play audio just now — please try again.");
+  }
+  async function say(text, cid, notify) {
+    const res = await window.Speech.speak(text, meta(cid).bcp47, settings().ttsRate || 0.9);
+    if (notify && res && res.ok === false) ttsFailToast(res.reason, cid);
+    return res;
+  }
+
+  function voiceCheckHtml() {
+    return '<div class="vc-title">🔊 Text-to-speech voices on this device</div>' +
+      window.LISAN_LANGS.map(function (l) {
+        const ok = window.Speech.hasVoice(l.bcp47);
+        return '<div class="vc-row"><span>' + l.flag + " " + esc(l.name) + "</span>" +
+          '<span class="' + (ok ? "vc-ok" : "vc-no") + '">' + (ok ? "✓ ready" : "✗ not installed") + "</span></div>";
+      }).join("") +
+      '<p class="hint-text">Missing a voice? On Android add it in Settings → System → Languages &amp; input → Text-to-speech output → install voice data. Most desktop browsers include these already.</p>';
+  }
+
   function speakBtn(text, cid, cls) {
     return '<button class="speak-btn ' + (cls || "") + '" data-say="' + esc(text) + '" title="Listen">🔊</button>';
   }
@@ -42,7 +84,7 @@
       if (b._bound) return; b._bound = true;
       b.addEventListener("click", function (e) {
         e.stopPropagation();
-        window.Speech.speak(b.getAttribute("data-say"), meta(cid).bcp47, settings().ttsRate || 0.9);
+        say(b.getAttribute("data-say"), cid, true);
       });
     });
   }
@@ -156,7 +198,10 @@
     const prod = [];
     u.vocab.forEach(function (v, i) { if (i % 2 === 0) prod.push(mcqStep(cid, ui, "v", i, true)); });
     (u.sentences || []).forEach(function (s, i) { prod.push({ type: "order", ui: ui, idx: i }); });
-    u.vocab.slice(0, 3).forEach(function (v, i) { prod.push({ type: "listen", ui: ui, kind: "v", idx: i }); });
+    // Listening exercises need a working voice for this language on this device.
+    if (window.Speech.hasVoice(meta(cid).bcp47)) {
+      u.vocab.slice(0, 3).forEach(function (v, i) { prod.push({ type: "listen", ui: ui, kind: "v", idx: i }); });
+    }
     u.vocab.slice(3, 5).forEach(function (v, i) { prod.push({ type: "type", ui: ui, idx: i + 3 }); });
     if (window.Speech.srAvailable()) {
       (u.sentences || []).slice(0, 2).forEach(function (s, i) { prod.push({ type: "speak", ui: ui, idx: i }); });
@@ -272,9 +317,11 @@
     const prompt = step.reverse ? v.en : v.t;
     return '<h2 class="q">' + (step.reverse ? "Which is “" + esc(v.en) + "”?" : "What does this mean?") + "</h2>" +
       '<div class="prompt"' + (step.reverse ? "" : dirAttr(cid)) + ">" + esc(prompt) + " " + (step.reverse ? "" : speakBtn(v.t, cid)) + "</div>" +
+      (step.reverse ? "" : romanCue(v, cid)) +
       '<div class="opts">' + opts.map(function (o, i) {
         const label = step.reverse ? o.t : o.en;
-        return '<button class="opt" data-i="' + i + '"' + (step.reverse ? dirAttr(cid) : "") + ">" + esc(label) + "</button>";
+        const cue = step.reverse && nonLatin(cid) && o.r ? '<span class="opt-roman">' + esc(o.r) + "</span>" : "";
+        return '<button class="opt" data-i="' + i + '"' + (step.reverse ? dirAttr(cid) : "") + ">" + esc(label) + cue + "</button>";
       }).join("") + "</div>";
   }
 
@@ -283,6 +330,7 @@
     const toks = (s.tok || s.t.split(/\s+/)).filter(function (t) { return t.trim(); });
     step._s = s; step._toks = toks;
     return '<h2 class="q">Build the sentence</h2><div class="prompt-en">' + esc(s.en) + "</div>" +
+      romanCue(s, cid) +
       '<div class="order-target" id="order-target"' + dirAttr(cid) + "></div>" +
       '<div class="order-bank" id="order-bank"' + dirAttr(cid) + ">" +
       shuffle(toks.map(function (t, i) { return { t: t, i: i }; })).map(function (x) {
@@ -342,7 +390,7 @@
       if (step.type === "teach") {
         const v = course(cid).units[step.ui].vocab[step.idx];
         window.SRS.introduce(cid, itemId("v", step.ui, step.idx));
-        window.Speech.speak(v.t, meta(cid).bcp47, settings().ttsRate || 0.9);
+        say(v.t, cid);
       }
       $("#next").addEventListener("click", function () { advance(sess); });
     }
@@ -350,14 +398,17 @@
       const d = course(cid).units[step.ui].dialogue;
       $("#next").addEventListener("click", function () { advance(sess); });
       $("#playall").addEventListener("click", async function () {
-        for (const t of d.turns) { await window.Speech.speak(t.t, meta(cid).bcp47, settings().ttsRate || 0.9); }
+        for (const t of d.turns) {
+          const res = await say(t.t, cid);
+          if (res && res.ok === false) { ttsFailToast(res.reason, cid); break; }
+        }
       });
     }
     else if (step.type === "mcq" || step.type === "listen") {
       const v = step._v;
       const id = itemId("v", step.ui, step.idx);
       if (step.type === "listen") {
-        const play = function () { window.Speech.speak(v.t, meta(cid).bcp47, settings().ttsRate || 0.9); };
+        const play = function () { say(v.t, cid, true); };
         $("#replay").addEventListener("click", play); play();
       }
       app.querySelectorAll(".opt").forEach(function (b) {
@@ -498,6 +549,7 @@
     const cid = currentCourseId();
     const c = course(cid);
     const due = shuffle(window.SRS.due(cid)).slice(0, 20);
+    const canHear = window.Speech.hasVoice(meta(cid).bcp47);
     const steps = due.map(function (id) {
       const item = itemById(c, id);
       if (!item) return null;
@@ -510,7 +562,8 @@
       const r = Math.random();
       if (r < 0.35) return { type: "flash", _item: item, _id: id, ui: ui, idx: idx };
       if (r < 0.6) return mcqStep(cid, ui, "v", idx, Math.random() < 0.5);
-      if (r < 0.8) return { type: "listen", ui: ui, idx: idx };
+      // Listening only when a voice exists; otherwise fall back to recognition.
+      if (r < 0.8) return canHear ? { type: "listen", ui: ui, idx: idx } : mcqStep(cid, ui, "v", idx, false);
       return { type: "type", ui: ui, idx: idx };
     }).filter(Boolean);
     runSession({ cid: cid, steps: steps, isLesson: false });
@@ -560,7 +613,7 @@
         if (reply.speakText) {
           const btn = document.createElement("button");
           btn.className = "speak-btn"; btn.textContent = "🔊";
-          btn.addEventListener("click", function () { window.Speech.speak(reply.speakText, meta(cid).bcp47, settings().ttsRate || 0.9); });
+          btn.addEventListener("click", function () { say(reply.speakText, cid, true); });
           el.appendChild(btn);
         }
       } catch (e) {
@@ -648,7 +701,8 @@
       '<button class="btn primary" id="save-key">Save key</button></div>' +
       '<div class="card"><h2>Speech</h2><label class="sub">Speaking speed: <span id="rate-val">' + (s.ttsRate || 0.9) + "</span></label>" +
       '<input type="range" id="tts-rate" min="0.5" max="1.2" step="0.1" value="' + (s.ttsRate || 0.9) + '">' +
-      "<p class=\"sub\">" + (window.Speech.srAvailable() ? "🎤 Speech recognition available on this device." : "🎤 Speech recognition isn't supported in this browser — the Android app and Chrome/Edge support it.") + "</p></div>";
+      "<p class=\"sub\">" + (window.Speech.srAvailable() ? "🎤 Speech recognition available on this device." : "🎤 Speech recognition isn't supported in this browser — the Android app and Chrome/Edge support it.") + "</p>" +
+      '<div class="voice-check" id="voice-check">' + voiceCheckHtml() + "</div></div>";
 
     if (cid) {
       const res = (window.LISAN_RESOURCES[cid] || []).concat(window.LISAN_RESOURCES.all);
@@ -661,6 +715,11 @@
       '<div class="card danger"><h2>Reset</h2><button class="btn bad-btn" id="reset">Erase all progress</button></div>';
 
     render(html, "settings");
+    // Voices can enumerate asynchronously (Android WebView); refresh once ready.
+    if (window.Speech.ensureVoices) window.Speech.ensureVoices().then(function () {
+      const vc = document.getElementById("voice-check");
+      if (vc) vc.innerHTML = voiceCheckHtml();
+    });
     $("#pick-course").addEventListener("click", viewCoursePicker);
     $("#save-key").addEventListener("click", function () {
       setSetting("apiKey", $("#api-key").value.trim());
@@ -683,5 +742,7 @@
   if ("serviceWorker" in navigator && location.protocol.indexOf("http") === 0) {
     navigator.serviceWorker.register("sw.js").catch(function () {});
   }
+  // Warm the TTS voice list early so listen-exercise gating is accurate.
+  if (window.Speech.ensureVoices) window.Speech.ensureVoices();
   if (currentCourseId()) viewLearn(); else viewCoursePicker();
 })();

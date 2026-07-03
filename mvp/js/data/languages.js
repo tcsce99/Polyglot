@@ -2,19 +2,22 @@
    Course content files register themselves on window.LISAN_COURSES. */
 window.LISAN_COURSES = window.LISAN_COURSES || {};
 
+/* latin:false marks a non-Latin script — those courses always show a
+   romanization cue in exercises so beginners aren't tested on unfamiliar
+   characters cold (see app.js romanCue). */
 window.LISAN_LANGS = [
-  { id: "es",  name: "Spanish",         native: "Español",    flag: "🇪🇸", bcp47: "es-ES", rtl: false },
-  { id: "fr",  name: "French",          native: "Français",   flag: "🇫🇷", bcp47: "fr-FR", rtl: false },
-  { id: "de",  name: "German",          native: "Deutsch",    flag: "🇩🇪", bcp47: "de-DE", rtl: false },
-  { id: "ru",  name: "Russian",         native: "Русский",    flag: "🇷🇺", bcp47: "ru-RU", rtl: false },
-  { id: "tr",  name: "Turkish",         native: "Türkçe",     flag: "🇹🇷", bcp47: "tr-TR", rtl: false },
-  { id: "ms",  name: "Malay",           native: "Bahasa Melayu", flag: "🇲🇾", bcp47: "ms-MY", rtl: false },
-  { id: "ur",  name: "Urdu",            native: "اردو",        flag: "🇵🇰", bcp47: "ur-PK", rtl: true  },
-  { id: "arz", name: "Egyptian Arabic", native: "مصري",        flag: "🇪🇬", bcp47: "ar-EG", rtl: true  },
-  { id: "cmn", name: "Mandarin",        native: "普通话",       flag: "🇨🇳", bcp47: "zh-CN", rtl: false },
-  { id: "yue", name: "Cantonese",       native: "廣東話",       flag: "🇭🇰", bcp47: "zh-HK", rtl: false },
-  { id: "ja",  name: "Japanese",        native: "日本語",       flag: "🇯🇵", bcp47: "ja-JP", rtl: false },
-  { id: "ko",  name: "Korean",          native: "한국어",       flag: "🇰🇷", bcp47: "ko-KR", rtl: false },
+  { id: "es",  name: "Spanish",         native: "Español",    flag: "🇪🇸", bcp47: "es-ES", rtl: false, latin: true  },
+  { id: "fr",  name: "French",          native: "Français",   flag: "🇫🇷", bcp47: "fr-FR", rtl: false, latin: true  },
+  { id: "de",  name: "German",          native: "Deutsch",    flag: "🇩🇪", bcp47: "de-DE", rtl: false, latin: true  },
+  { id: "ru",  name: "Russian",         native: "Русский",    flag: "🇷🇺", bcp47: "ru-RU", rtl: false, latin: false },
+  { id: "tr",  name: "Turkish",         native: "Türkçe",     flag: "🇹🇷", bcp47: "tr-TR", rtl: false, latin: true  },
+  { id: "ms",  name: "Malay",           native: "Bahasa Melayu", flag: "🇲🇾", bcp47: "ms-MY", rtl: false, latin: true  },
+  { id: "ur",  name: "Urdu",            native: "اردو",        flag: "🇵🇰", bcp47: "ur-PK", rtl: true,  latin: false },
+  { id: "arz", name: "Egyptian Arabic", native: "مصري",        flag: "🇪🇬", bcp47: "ar-EG", rtl: true,  latin: false },
+  { id: "cmn", name: "Mandarin",        native: "普通话",       flag: "🇨🇳", bcp47: "zh-CN", rtl: false, latin: false },
+  { id: "yue", name: "Cantonese",       native: "廣東話",       flag: "🇭🇰", bcp47: "zh-HK", rtl: false, latin: false },
+  { id: "ja",  name: "Japanese",        native: "日本語",       flag: "🇯🇵", bcp47: "ja-JP", rtl: false, latin: false },
+  { id: "ko",  name: "Korean",          native: "한국어",       flag: "🇰🇷", bcp47: "ko-KR", rtl: false, latin: false },
 ];
 
 /* Shared grammatical-category taxonomy. Every vocab item, sentence and

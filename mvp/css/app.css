@@ -77,6 +77,9 @@ input{font-family:inherit;color:inherit}
 .q{font-size:17px;font-weight:700;margin-bottom:14px}
 .prompt{font-size:26px;font-weight:700;margin:10px 0;line-height:1.4}
 .prompt-en{font-size:17px;color:var(--text2);margin:8px 0 16px}
+/* romanization cue under non-Latin scripts so beginners aren't tested cold */
+.prompt-roman{color:var(--gold);font-size:16px;font-weight:600;margin:-4px 0 14px;letter-spacing:.2px}
+.opt-roman{display:block;color:var(--gold);font-size:12.5px;font-weight:600;margin-top:3px}
 
 /* teach / note cards */
 .teach-card{text-align:center;padding:34px 16px}
@@ -184,4 +187,17 @@ input{font-family:inherit;color:inherit}
 .res-desc{display:block;color:var(--text3);font-size:12px;font-weight:400}
 
 input[type=range]{width:100%;accent-color:var(--accent);margin:10px 0}
+
+/* per-device voice diagnostic (Settings → Speech) */
+.voice-check{margin-top:14px;border-top:1px solid var(--border);padding-top:12px}
+.vc-title{font-size:12px;color:var(--text2);text-transform:uppercase;letter-spacing:.5px;font-weight:700;margin-bottom:8px}
+.vc-row{display:flex;justify-content:space-between;align-items:center;padding:5px 0;font-size:14px;border-bottom:1px solid var(--border)}
+.vc-row:last-of-type{border-bottom:none}
+.vc-ok{color:var(--accent);font-size:12.5px;font-weight:700}
+.vc-no{color:var(--text3);font-size:12.5px;font-weight:600}
+
+/* toast — explains silent audio failures (e.g. missing Android voice pack) */
+.toast{position:fixed;left:50%;bottom:calc(72px + env(safe-area-inset-bottom,0));transform:translateX(-50%) translateY(12px);max-width:min(92vw,420px);background:var(--bg3);color:var(--text);border:1px solid var(--border2);border-radius:var(--r-sm);padding:12px 15px;font-size:13.5px;line-height:1.45;box-shadow:0 8px 28px rgba(0,0,0,.45);opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;z-index:100}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
 @media (max-width:420px){.prompt{font-size:22px}.teach-t{font-size:28px}}
