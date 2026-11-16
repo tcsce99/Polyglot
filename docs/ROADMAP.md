@@ -1,5 +1,8 @@
 # Roadmap — Build in This Order
 
+> **Status (November 2026):** scope changed to four languages — Maltese, Urdu, Persian, Spanish — each built out A1→C1. Phases 1–3 and the placement/exam/backup parts of Phase 5 are implemented for those four; see the README for what exists and its known limits. Phase 4's 12-language scale-out is shelved. Still open: native-speaker review of the authored lessons, bundled audio recordings, cloud sync, on-device Android testing.
+
+
 Claude Code: do not start a phase until the previous phase's checklist passes. The user will independently verify each checklist.
 
 ## Phase 1 — Skeleton PWA (1 language: Spanish)
