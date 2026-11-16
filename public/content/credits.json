@@ -1,0 +1,2573 @@
+{
+ "languages": {
+  "mlt": {
+   "lang": "mlt",
+   "name": "Maltese",
+   "words": 5000,
+   "sentences": 1275,
+   "tatoebaSentences": 622,
+   "wiktionaryExamples": 653,
+   "contributors": [
+    {
+     "name": "Amastan",
+     "n": 425
+    },
+    {
+     "name": "enteka",
+     "n": 49
+    },
+    {
+     "name": "biber",
+     "n": 43
+    },
+    {
+     "name": "scutajar",
+     "n": 23
+    },
+    {
+     "name": "abadf",
+     "n": 17
+    },
+    {
+     "name": "jbor0081",
+     "n": 16
+    },
+    {
+     "name": "Iye_Tete",
+     "n": 13
+    },
+    {
+     "name": "unknown",
+     "n": 11
+    },
+    {
+     "name": "rdgscratch",
+     "n": 5
+    },
+    {
+     "name": "Hazevi",
+     "n": 3
+    },
+    {
+     "name": "janTuki",
+     "n": 3
+    },
+    {
+     "name": "ninefi",
+     "n": 3
+    },
+    {
+     "name": "XZJqz",
+     "n": 2
+    },
+    {
+     "name": "Balamax",
+     "n": 2
+    },
+    {
+     "name": "koala",
+     "n": 2
+    },
+    {
+     "name": "pne",
+     "n": 1
+    },
+    {
+     "name": "enebi",
+     "n": 1
+    },
+    {
+     "name": "DetErMinNavn",
+     "n": 1
+    },
+    {
+     "name": "Adelpa",
+     "n": 1
+    },
+    {
+     "name": "Rector",
+     "n": 1
+    }
+   ]
+  },
+  "urd": {
+   "lang": "urd",
+   "name": "Urdu",
+   "words": 4887,
+   "sentences": 3094,
+   "tatoebaSentences": 2390,
+   "wiktionaryExamples": 704,
+   "contributors": [
+    {
+     "name": "nabeel_tahir",
+     "n": 1449
+    },
+    {
+     "name": "Roomba_Unit",
+     "n": 658
+    },
+    {
+     "name": "eeyinn",
+     "n": 107
+    },
+    {
+     "name": "Akmal_Butt",
+     "n": 38
+    },
+    {
+     "name": "Faizyrooma44",
+     "n": 16
+    },
+    {
+     "name": "abdul_rehman_2050",
+     "n": 13
+    },
+    {
+     "name": "Adeelpk",
+     "n": 11
+    },
+    {
+     "name": "FakharShafi",
+     "n": 10
+    },
+    {
+     "name": "sabretou",
+     "n": 9
+    },
+    {
+     "name": "unknown",
+     "n": 8
+    },
+    {
+     "name": "RadiumCat",
+     "n": 7
+    },
+    {
+     "name": "tariquehussaingop",
+     "n": 7
+    },
+    {
+     "name": "Balamax",
+     "n": 6
+    },
+    {
+     "name": "IlyasSahi",
+     "n": 5
+    },
+    {
+     "name": "tariquehussaingopa",
+     "n": 5
+    },
+    {
+     "name": "nusrat",
+     "n": 4
+    },
+    {
+     "name": "basim14",
+     "n": 4
+    },
+    {
+     "name": "atitarev",
+     "n": 3
+    },
+    {
+     "name": "biber",
+     "n": 2
+    },
+    {
+     "name": "tariqu",
+     "n": 2
+    },
+    {
+     "name": "janTuki",
+     "n": 2
+    },
+    {
+     "name": "FiorixF1",
+     "n": 2
+    },
+    {
+     "name": "asifsyal",
+     "n": 2
+    },
+    {
+     "name": "tzsyed",
+     "n": 1
+    },
+    {
+     "name": "jafar_atayee",
+     "n": 1
+    },
+    {
+     "name": "tarim222",
+     "n": 1
+    },
+    {
+     "name": "Khattak",
+     "n": 1
+    },
+    {
+     "name": "JohnKnaphus",
+     "n": 1
+    },
+    {
+     "name": "adnan_tipu",
+     "n": 1
+    },
+    {
+     "name": "shobi97",
+     "n": 1
+    },
+    {
+     "name": "Vortarulo",
+     "n": 1
+    },
+    {
+     "name": "shahidali6",
+     "n": 1
+    },
+    {
+     "name": "tariquehussaingo",
+     "n": 1
+    },
+    {
+     "name": "Poliglotski",
+     "n": 1
+    },
+    {
+     "name": "Faizyrooma4",
+     "n": 1
+    },
+    {
+     "name": "jungnet",
+     "n": 1
+    },
+    {
+     "name": "tariquehussaing",
+     "n": 1
+    },
+    {
+     "name": "usaf",
+     "n": 1
+    },
+    {
+     "name": "ISLAMGUL",
+     "n": 1
+    },
+    {
+     "name": "Saraiki",
+     "n": 1
+    },
+    {
+     "name": "ninefi",
+     "n": 1
+    },
+    {
+     "name": "alanood",
+     "n": 1
+    },
+    {
+     "name": "ABChessel",
+     "n": 1
+    }
+   ]
+  },
+  "pes": {
+   "lang": "pes",
+   "name": "Persian",
+   "words": 6500,
+   "sentences": 6000,
+   "tatoebaSentences": 3770,
+   "wiktionaryExamples": 2230,
+   "contributors": [
+    {
+     "name": "cojiluc",
+     "n": 897
+    },
+    {
+     "name": "mahdiye",
+     "n": 391
+    },
+    {
+     "name": "AsliAbbasi",
+     "n": 374
+    },
+    {
+     "name": "manelie",
+     "n": 369
+    },
+    {
+     "name": "sinakd",
+     "n": 260
+    },
+    {
+     "name": "ghasemkiani",
+     "n": 163
+    },
+    {
+     "name": "kuarash",
+     "n": 101
+    },
+    {
+     "name": "Amirreza_Farid",
+     "n": 95
+    },
+    {
+     "name": "ismaximum",
+     "n": 90
+    },
+    {
+     "name": "armandaneshjoo",
+     "n": 71
+    },
+    {
+     "name": "pliiganto",
+     "n": 66
+    },
+    {
+     "name": "AchillePoirot",
+     "n": 63
+    },
+    {
+     "name": "Adelpa",
+     "n": 59
+    },
+    {
+     "name": "Esperantodan",
+     "n": 46
+    },
+    {
+     "name": "User103370",
+     "n": 45
+    },
+    {
+     "name": "deadmarshal",
+     "n": 41
+    },
+    {
+     "name": "bialynicki",
+     "n": 40
+    },
+    {
+     "name": "EsperantoFarsi_Robot",
+     "n": 33
+    },
+    {
+     "name": "janTuki",
+     "n": 32
+    },
+    {
+     "name": "pedrampc68",
+     "n": 31
+    },
+    {
+     "name": "unknown",
+     "n": 31
+    },
+    {
+     "name": "Suroosh",
+     "n": 25
+    },
+    {
+     "name": "Hassan66",
+     "n": 22
+    },
+    {
+     "name": "Hussein64",
+     "n": 21
+    },
+    {
+     "name": "mshahriarinia",
+     "n": 21
+    },
+    {
+     "name": "saeedveradi",
+     "n": 19
+    },
+    {
+     "name": "Schahrzad",
+     "n": 18
+    },
+    {
+     "name": "reto",
+     "n": 17
+    },
+    {
+     "name": "SadeceTurkce",
+     "n": 17
+    },
+    {
+     "name": "farzanshabani",
+     "n": 14
+    },
+    {
+     "name": "MEJSAM",
+     "n": 11
+    },
+    {
+     "name": "Pasargad",
+     "n": 11
+    },
+    {
+     "name": "utm1990",
+     "n": 11
+    },
+    {
+     "name": "enebi",
+     "n": 11
+    },
+    {
+     "name": "behi",
+     "n": 10
+    },
+    {
+     "name": "Fateme",
+     "n": 10
+    },
+    {
+     "name": "Eldad",
+     "n": 9
+    },
+    {
+     "name": "mostafaakhlaghi",
+     "n": 9
+    },
+    {
+     "name": "MCMC",
+     "n": 9
+    },
+    {
+     "name": "hamid",
+     "n": 8
+    },
+    {
+     "name": "papilichasisto",
+     "n": 8
+    },
+    {
+     "name": "saman2013",
+     "n": 7
+    },
+    {
+     "name": "yas_dj",
+     "n": 6
+    },
+    {
+     "name": "Ameer",
+     "n": 6
+    },
+    {
+     "name": "ninefi",
+     "n": 6
+    },
+    {
+     "name": "vahidmath76",
+     "n": 5
+    },
+    {
+     "name": "kamranmafi",
+     "n": 5
+    },
+    {
+     "name": "hamedkord",
+     "n": 5
+    },
+    {
+     "name": "lifeisgreat",
+     "n": 5
+    },
+    {
+     "name": "mat",
+     "n": 5
+    },
+    {
+     "name": "mahdikalantari",
+     "n": 5
+    },
+    {
+     "name": "boracasli2",
+     "n": 5
+    },
+    {
+     "name": "atitarev",
+     "n": 5
+    },
+    {
+     "name": "mohsen660",
+     "n": 4
+    },
+    {
+     "name": "Pedraam",
+     "n": 4
+    },
+    {
+     "name": "abi",
+     "n": 4
+    },
+    {
+     "name": "aram_ahmadi_1998",
+     "n": 4
+    },
+    {
+     "name": "marji",
+     "n": 3
+    },
+    {
+     "name": "yashar",
+     "n": 3
+    },
+    {
+     "name": "abolfazl",
+     "n": 3
+    },
+    {
+     "name": "Hamideh7",
+     "n": 3
+    },
+    {
+     "name": "ajje",
+     "n": 3
+    },
+    {
+     "name": "mhe1377",
+     "n": 3
+    },
+    {
+     "name": "maralsalehi",
+     "n": 3
+    },
+    {
+     "name": "Esishabani",
+     "n": 3
+    },
+    {
+     "name": "adel20",
+     "n": 3
+    },
+    {
+     "name": "deathwing",
+     "n": 2
+    },
+    {
+     "name": "Iraneman",
+     "n": 2
+    },
+    {
+     "name": "ApAdAnA",
+     "n": 2
+    },
+    {
+     "name": "Lenin_1917",
+     "n": 2
+    },
+    {
+     "name": "hamoun97",
+     "n": 2
+    },
+    {
+     "name": "zila",
+     "n": 2
+    },
+    {
+     "name": "ErikAskari",
+     "n": 2
+    },
+    {
+     "name": "shayan",
+     "n": 2
+    },
+    {
+     "name": "Johndoe",
+     "n": 2
+    },
+    {
+     "name": "Reza7",
+     "n": 2
+    },
+    {
+     "name": "seveleu_dubrovnik",
+     "n": 2
+    },
+    {
+     "name": "ArminAshrafi",
+     "n": 2
+    },
+    {
+     "name": "AH2024",
+     "n": 2
+    },
+    {
+     "name": "mamaliz",
+     "n": 2
+    },
+    {
+     "name": "Balamax",
+     "n": 2
+    },
+    {
+     "name": "User77813",
+     "n": 2
+    },
+    {
+     "name": "arved",
+     "n": 1
+    },
+    {
+     "name": "saadat",
+     "n": 1
+    },
+    {
+     "name": "ayda",
+     "n": 1
+    },
+    {
+     "name": "Wida",
+     "n": 1
+    },
+    {
+     "name": "mojtaba",
+     "n": 1
+    },
+    {
+     "name": "saeb",
+     "n": 1
+    },
+    {
+     "name": "Mahmud",
+     "n": 1
+    },
+    {
+     "name": "MohamedAlian",
+     "n": 1
+    },
+    {
+     "name": "mnr",
+     "n": 1
+    },
+    {
+     "name": "VirtuOZ",
+     "n": 1
+    },
+    {
+     "name": "willthemiller",
+     "n": 1
+    },
+    {
+     "name": "Svetik1",
+     "n": 1
+    },
+    {
+     "name": "Pourya",
+     "n": 1
+    },
+    {
+     "name": "negativeclock",
+     "n": 1
+    },
+    {
+     "name": "OsoHombre",
+     "n": 1
+    },
+    {
+     "name": "Sarchia",
+     "n": 1
+    },
+    {
+     "name": "saharnasseri",
+     "n": 1
+    },
+    {
+     "name": "Vortarulo",
+     "n": 1
+    },
+    {
+     "name": "arta",
+     "n": 1
+    },
+    {
+     "name": "sharifnia",
+     "n": 1
+    },
+    {
+     "name": "sherry13",
+     "n": 1
+    },
+    {
+     "name": "taymos1",
+     "n": 1
+    },
+    {
+     "name": "elborz",
+     "n": 1
+    },
+    {
+     "name": "heidar_sadeghi",
+     "n": 1
+    },
+    {
+     "name": "everylanguage",
+     "n": 1
+    },
+    {
+     "name": "arashmehrad",
+     "n": 1
+    },
+    {
+     "name": "martini",
+     "n": 1
+    },
+    {
+     "name": "tabkom",
+     "n": 1
+    },
+    {
+     "name": "Gaeltacht",
+     "n": 1
+    },
+    {
+     "name": "mammad",
+     "n": 1
+    },
+    {
+     "name": "KKKK",
+     "n": 1
+    },
+    {
+     "name": "farhadarkani",
+     "n": 1
+    },
+    {
+     "name": "davood",
+     "n": 1
+    },
+    {
+     "name": "alirezat",
+     "n": 1
+    },
+    {
+     "name": "hami",
+     "n": 1
+    },
+    {
+     "name": "zaman_rasikh",
+     "n": 1
+    },
+    {
+     "name": "ellasevia",
+     "n": 1
+    },
+    {
+     "name": "europeanlanguages",
+     "n": 1
+    },
+    {
+     "name": "farschied",
+     "n": 1
+    },
+    {
+     "name": "aayanoyouni",
+     "n": 1
+    },
+    {
+     "name": "musatkin",
+     "n": 1
+    },
+    {
+     "name": "Mehrdad55",
+     "n": 1
+    },
+    {
+     "name": "Musicandnothing",
+     "n": 1
+    },
+    {
+     "name": "tohidk98",
+     "n": 1
+    },
+    {
+     "name": "zabihrahmani",
+     "n": 1
+    },
+    {
+     "name": "jj07",
+     "n": 1
+    },
+    {
+     "name": "hreza1",
+     "n": 1
+    },
+    {
+     "name": "dr",
+     "n": 1
+    },
+    {
+     "name": "turklehceleri",
+     "n": 1
+    },
+    {
+     "name": "martianboy",
+     "n": 1
+    },
+    {
+     "name": "rul",
+     "n": 1
+    }
+   ]
+  },
+  "spa": {
+   "lang": "spa",
+   "name": "Spanish",
+   "words": 6500,
+   "sentences": 6000,
+   "tatoebaSentences": 6000,
+   "wiktionaryExamples": 0,
+   "contributors": [
+    {
+     "name": "marcelostockle",
+     "n": 1127
+    },
+    {
+     "name": "Shishir",
+     "n": 808
+    },
+    {
+     "name": "Seael",
+     "n": 327
+    },
+    {
+     "name": "arh",
+     "n": 315
+    },
+    {
+     "name": "hayastan",
+     "n": 300
+    },
+    {
+     "name": "cueyayotl",
+     "n": 206
+    },
+    {
+     "name": "carlosalberto",
+     "n": 171
+    },
+    {
+     "name": "darinmex",
+     "n": 146
+    },
+    {
+     "name": "albrusgher",
+     "n": 144
+    },
+    {
+     "name": "manufrutos",
+     "n": 126
+    },
+    {
+     "name": "teskmon",
+     "n": 109
+    },
+    {
+     "name": "mervert1",
+     "n": 105
+    },
+    {
+     "name": "DJ_Saidez",
+     "n": 94
+    },
+    {
+     "name": "don_ramon",
+     "n": 90
+    },
+    {
+     "name": "Eremon",
+     "n": 83
+    },
+    {
+     "name": "alexmarcelo",
+     "n": 63
+    },
+    {
+     "name": "ecorralest101",
+     "n": 59
+    },
+    {
+     "name": "lukaszpp",
+     "n": 56
+    },
+    {
+     "name": "wallebot",
+     "n": 56
+    },
+    {
+     "name": "tatoerique",
+     "n": 54
+    },
+    {
+     "name": "Leono",
+     "n": 52
+    },
+    {
+     "name": "hundo",
+     "n": 47
+    },
+    {
+     "name": "mexicanhere",
+     "n": 47
+    },
+    {
+     "name": "swyter",
+     "n": 45
+    },
+    {
+     "name": "Adelpa",
+     "n": 44
+    },
+    {
+     "name": "nancy",
+     "n": 39
+    },
+    {
+     "name": "pchamorro",
+     "n": 32
+    },
+    {
+     "name": "saverius",
+     "n": 32
+    },
+    {
+     "name": "DarkHollow",
+     "n": 28
+    },
+    {
+     "name": "megamanenm",
+     "n": 26
+    },
+    {
+     "name": "baudelaire",
+     "n": 24
+    },
+    {
+     "name": "ignacio",
+     "n": 23
+    },
+    {
+     "name": "diegohn",
+     "n": 19
+    },
+    {
+     "name": "UsuarioX",
+     "n": 19
+    },
+    {
+     "name": "Dejo",
+     "n": 18
+    },
+    {
+     "name": "frpzzd",
+     "n": 18
+    },
+    {
+     "name": "ficion",
+     "n": 16
+    },
+    {
+     "name": "rafaeldejesus8199",
+     "n": 16
+    },
+    {
+     "name": "Alba",
+     "n": 15
+    },
+    {
+     "name": "ajje",
+     "n": 15
+    },
+    {
+     "name": "fpp",
+     "n": 14
+    },
+    {
+     "name": "rul",
+     "n": 14
+    },
+    {
+     "name": "Espi",
+     "n": 13
+    },
+    {
+     "name": "peibolvig",
+     "n": 13
+    },
+    {
+     "name": "Amastan",
+     "n": 13
+    },
+    {
+     "name": "arashi_29",
+     "n": 12
+    },
+    {
+     "name": "enteka",
+     "n": 12
+    },
+    {
+     "name": "gianich73",
+     "n": 12
+    },
+    {
+     "name": "GuidoW",
+     "n": 12
+    },
+    {
+     "name": "ventana",
+     "n": 11
+    },
+    {
+     "name": "termito2nd",
+     "n": 11
+    },
+    {
+     "name": "lazarus1907",
+     "n": 11
+    },
+    {
+     "name": "leoruilova",
+     "n": 11
+    },
+    {
+     "name": "shekitten",
+     "n": 11
+    },
+    {
+     "name": "chinopinyin",
+     "n": 10
+    },
+    {
+     "name": "alegarvid",
+     "n": 10
+    },
+    {
+     "name": "opor",
+     "n": 9
+    },
+    {
+     "name": "ildefonk",
+     "n": 9
+    },
+    {
+     "name": "Ricardo14",
+     "n": 9
+    },
+    {
+     "name": "BraveSentry",
+     "n": 8
+    },
+    {
+     "name": "LugoIlmer",
+     "n": 8
+    },
+    {
+     "name": "japegon",
+     "n": 8
+    },
+    {
+     "name": "emma_zunz",
+     "n": 8
+    },
+    {
+     "name": "araneo",
+     "n": 8
+    },
+    {
+     "name": "al_ex_an_der",
+     "n": 7
+    },
+    {
+     "name": "Francisco_M",
+     "n": 7
+    },
+    {
+     "name": "Tom9358",
+     "n": 7
+    },
+    {
+     "name": "lawka",
+     "n": 7
+    },
+    {
+     "name": "danilo",
+     "n": 6
+    },
+    {
+     "name": "kylecito",
+     "n": 6
+    },
+    {
+     "name": "quarzoliquido",
+     "n": 6
+    },
+    {
+     "name": "Warnerbroder",
+     "n": 6
+    },
+    {
+     "name": "jorgearestrepo",
+     "n": 6
+    },
+    {
+     "name": "Besatnias",
+     "n": 6
+    },
+    {
+     "name": "Aether",
+     "n": 6
+    },
+    {
+     "name": "SrTortuga",
+     "n": 6
+    },
+    {
+     "name": "umano",
+     "n": 6
+    },
+    {
+     "name": "Schuager",
+     "n": 6
+    },
+    {
+     "name": "Teiruzu",
+     "n": 6
+    },
+    {
+     "name": "cariito",
+     "n": 6
+    },
+    {
+     "name": "ramonj",
+     "n": 6
+    },
+    {
+     "name": "AMIKEMA",
+     "n": 6
+    },
+    {
+     "name": "qdii",
+     "n": 5
+    },
+    {
+     "name": "Coyolxauhqui",
+     "n": 5
+    },
+    {
+     "name": "washisnein",
+     "n": 5
+    },
+    {
+     "name": "DanaDescalza",
+     "n": 5
+    },
+    {
+     "name": "massama",
+     "n": 5
+    },
+    {
+     "name": "fgreco",
+     "n": 5
+    },
+    {
+     "name": "kuma",
+     "n": 5
+    },
+    {
+     "name": "arnxy20",
+     "n": 5
+    },
+    {
+     "name": "adroguense",
+     "n": 5
+    },
+    {
+     "name": "Omnivoro",
+     "n": 5
+    },
+    {
+     "name": "solmyrbcn",
+     "n": 5
+    },
+    {
+     "name": "mialiesperantistas",
+     "n": 5
+    },
+    {
+     "name": "Masatami",
+     "n": 5
+    },
+    {
+     "name": "cdani",
+     "n": 5
+    },
+    {
+     "name": "Hohen",
+     "n": 5
+    },
+    {
+     "name": "ssc73",
+     "n": 5
+    },
+    {
+     "name": "Rafp",
+     "n": 5
+    },
+    {
+     "name": "adaycito",
+     "n": 5
+    },
+    {
+     "name": "rodolforr",
+     "n": 5
+    },
+    {
+     "name": "felipeselles",
+     "n": 4
+    },
+    {
+     "name": "pilaf",
+     "n": 4
+    },
+    {
+     "name": "topofabi",
+     "n": 4
+    },
+    {
+     "name": "Haruhi_Gafitas",
+     "n": 4
+    },
+    {
+     "name": "caiser",
+     "n": 4
+    },
+    {
+     "name": "Kiraness",
+     "n": 4
+    },
+    {
+     "name": "Goatstein",
+     "n": 4
+    },
+    {
+     "name": "Nylez",
+     "n": 4
+    },
+    {
+     "name": "JSKabylie15",
+     "n": 4
+    },
+    {
+     "name": "Lernema",
+     "n": 4
+    },
+    {
+     "name": "Eldad",
+     "n": 4
+    },
+    {
+     "name": "camilou",
+     "n": 4
+    },
+    {
+     "name": "alejandra__",
+     "n": 4
+    },
+    {
+     "name": "ManuelML",
+     "n": 4
+    },
+    {
+     "name": "Luornu",
+     "n": 4
+    },
+    {
+     "name": "emigonza",
+     "n": 4
+    },
+    {
+     "name": "Galko",
+     "n": 4
+    },
+    {
+     "name": "Ahha",
+     "n": 4
+    },
+    {
+     "name": "sarostegui",
+     "n": 3
+    },
+    {
+     "name": "melissa83",
+     "n": 3
+    },
+    {
+     "name": "oscarguille",
+     "n": 3
+    },
+    {
+     "name": "Ankio",
+     "n": 3
+    },
+    {
+     "name": "marinoli",
+     "n": 3
+    },
+    {
+     "name": "Kary",
+     "n": 3
+    },
+    {
+     "name": "hantol01",
+     "n": 3
+    },
+    {
+     "name": "IXTLA",
+     "n": 3
+    },
+    {
+     "name": "miren",
+     "n": 3
+    },
+    {
+     "name": "rsarias",
+     "n": 3
+    },
+    {
+     "name": "Elyte",
+     "n": 3
+    },
+    {
+     "name": "Firesoul7",
+     "n": 3
+    },
+    {
+     "name": "MrMultilingual",
+     "n": 3
+    },
+    {
+     "name": "0987654321ok",
+     "n": 3
+    },
+    {
+     "name": "Alejandr0",
+     "n": 3
+    },
+    {
+     "name": "BenjaBesings_14",
+     "n": 3
+    },
+    {
+     "name": "catakaoe",
+     "n": 3
+    },
+    {
+     "name": "clerval",
+     "n": 3
+    },
+    {
+     "name": "robespain",
+     "n": 3
+    },
+    {
+     "name": "Ragal",
+     "n": 3
+    },
+    {
+     "name": "joronoso",
+     "n": 3
+    },
+    {
+     "name": "Tux",
+     "n": 3
+    },
+    {
+     "name": "callmath",
+     "n": 3
+    },
+    {
+     "name": "Mack",
+     "n": 3
+    },
+    {
+     "name": "marco87",
+     "n": 3
+    },
+    {
+     "name": "Reiha",
+     "n": 3
+    },
+    {
+     "name": "emanuel81",
+     "n": 3
+    },
+    {
+     "name": "konrad509",
+     "n": 3
+    },
+    {
+     "name": "Serafin",
+     "n": 3
+    },
+    {
+     "name": "zvzuibqx",
+     "n": 3
+    },
+    {
+     "name": "dpcossio",
+     "n": 3
+    },
+    {
+     "name": "stebnbr",
+     "n": 3
+    },
+    {
+     "name": "Angfarmar",
+     "n": 3
+    },
+    {
+     "name": "El_mas_capo",
+     "n": 3
+    },
+    {
+     "name": "migueltoledo86",
+     "n": 3
+    },
+    {
+     "name": "pipus_net",
+     "n": 3
+    },
+    {
+     "name": "senryakun",
+     "n": 3
+    },
+    {
+     "name": "Serrot",
+     "n": 3
+    },
+    {
+     "name": "GustavoDC",
+     "n": 3
+    },
+    {
+     "name": "radu107",
+     "n": 3
+    },
+    {
+     "name": "BilalBouy",
+     "n": 3
+    },
+    {
+     "name": "Balamax",
+     "n": 3
+    },
+    {
+     "name": "Eckhardtgabriel",
+     "n": 2
+    },
+    {
+     "name": "javc_86",
+     "n": 2
+    },
+    {
+     "name": "andresevargas",
+     "n": 2
+    },
+    {
+     "name": "Fanki",
+     "n": 2
+    },
+    {
+     "name": "newyears1985",
+     "n": 2
+    },
+    {
+     "name": "alvarojimpal",
+     "n": 2
+    },
+    {
+     "name": "mayok",
+     "n": 2
+    },
+    {
+     "name": "jesuve",
+     "n": 2
+    },
+    {
+     "name": "el_vecino",
+     "n": 2
+    },
+    {
+     "name": "BlueDecember",
+     "n": 2
+    },
+    {
+     "name": "inastar",
+     "n": 2
+    },
+    {
+     "name": "Gaz83",
+     "n": 2
+    },
+    {
+     "name": "Eyenik",
+     "n": 2
+    },
+    {
+     "name": "Mavry",
+     "n": 2
+    },
+    {
+     "name": "xjjAstrus",
+     "n": 2
+    },
+    {
+     "name": "pcarolina",
+     "n": 2
+    },
+    {
+     "name": "Javea",
+     "n": 2
+    },
+    {
+     "name": "stormy_clau",
+     "n": 2
+    },
+    {
+     "name": "samir_t",
+     "n": 2
+    },
+    {
+     "name": "Bonaaq",
+     "n": 2
+    },
+    {
+     "name": "NicoLXVI",
+     "n": 2
+    },
+    {
+     "name": "entusiasta",
+     "n": 2
+    },
+    {
+     "name": "metalserfo",
+     "n": 2
+    },
+    {
+     "name": "Silvestre",
+     "n": 2
+    },
+    {
+     "name": "BoriQa",
+     "n": 2
+    },
+    {
+     "name": "lena17",
+     "n": 2
+    },
+    {
+     "name": "Plusquamperfekt",
+     "n": 2
+    },
+    {
+     "name": "Lisandro586",
+     "n": 2
+    },
+    {
+     "name": "fedeca",
+     "n": 2
+    },
+    {
+     "name": "JSKabylie",
+     "n": 2
+    },
+    {
+     "name": "morbrorper",
+     "n": 2
+    },
+    {
+     "name": "cronopio",
+     "n": 2
+    },
+    {
+     "name": "humbertovs",
+     "n": 2
+    },
+    {
+     "name": "Daga007",
+     "n": 2
+    },
+    {
+     "name": "juamoran",
+     "n": 2
+    },
+    {
+     "name": "Soninka",
+     "n": 2
+    },
+    {
+     "name": "Darukeru",
+     "n": 2
+    },
+    {
+     "name": "helpa",
+     "n": 2
+    },
+    {
+     "name": "zaneselvans",
+     "n": 2
+    },
+    {
+     "name": "xallace",
+     "n": 2
+    },
+    {
+     "name": "Teangloir",
+     "n": 2
+    },
+    {
+     "name": "ninefi",
+     "n": 2
+    },
+    {
+     "name": "greuze",
+     "n": 2
+    },
+    {
+     "name": "Pablete",
+     "n": 2
+    },
+    {
+     "name": "burntsoap",
+     "n": 2
+    },
+    {
+     "name": "Sango",
+     "n": 2
+    },
+    {
+     "name": "jiterraza",
+     "n": 2
+    },
+    {
+     "name": "mahasiah",
+     "n": 2
+    },
+    {
+     "name": "Dreamk33",
+     "n": 2
+    },
+    {
+     "name": "Julian_L",
+     "n": 2
+    },
+    {
+     "name": "mane",
+     "n": 2
+    },
+    {
+     "name": "laserchanto",
+     "n": 2
+    },
+    {
+     "name": "verver",
+     "n": 2
+    },
+    {
+     "name": "zahurdias",
+     "n": 2
+    },
+    {
+     "name": "bichodebola",
+     "n": 2
+    },
+    {
+     "name": "Jeigmz",
+     "n": 2
+    },
+    {
+     "name": "Leynaf",
+     "n": 2
+    },
+    {
+     "name": "ludoviko",
+     "n": 1
+    },
+    {
+     "name": "rsalc1",
+     "n": 1
+    },
+    {
+     "name": "jerom",
+     "n": 1
+    },
+    {
+     "name": "martinerburu",
+     "n": 1
+    },
+    {
+     "name": "godarderik",
+     "n": 1
+    },
+    {
+     "name": "Rita",
+     "n": 1
+    },
+    {
+     "name": "zorder",
+     "n": 1
+    },
+    {
+     "name": "Kokoo",
+     "n": 1
+    },
+    {
+     "name": "jmdm78",
+     "n": 1
+    },
+    {
+     "name": "atc",
+     "n": 1
+    },
+    {
+     "name": "Uvulaofdoom",
+     "n": 1
+    },
+    {
+     "name": "sixtynine",
+     "n": 1
+    },
+    {
+     "name": "siglepri",
+     "n": 1
+    },
+    {
+     "name": "oldfashioned",
+     "n": 1
+    },
+    {
+     "name": "Serveto",
+     "n": 1
+    },
+    {
+     "name": "jdmcowan",
+     "n": 1
+    },
+    {
+     "name": "brandini",
+     "n": 1
+    },
+    {
+     "name": "fidelina",
+     "n": 1
+    },
+    {
+     "name": "NooryLan",
+     "n": 1
+    },
+    {
+     "name": "dan1ruusianspanish",
+     "n": 1
+    },
+    {
+     "name": "Karla2600",
+     "n": 1
+    },
+    {
+     "name": "AucaCoyan",
+     "n": 1
+    },
+    {
+     "name": "sacredceltic",
+     "n": 1
+    },
+    {
+     "name": "matsumurae",
+     "n": 1
+    },
+    {
+     "name": "eltacodemex",
+     "n": 1
+    },
+    {
+     "name": "jatubio",
+     "n": 1
+    },
+    {
+     "name": "glossboss",
+     "n": 1
+    },
+    {
+     "name": "UristMcNani",
+     "n": 1
+    },
+    {
+     "name": "nexx",
+     "n": 1
+    },
+    {
+     "name": "macincen",
+     "n": 1
+    },
+    {
+     "name": "MUIRIEL",
+     "n": 1
+    },
+    {
+     "name": "zgv",
+     "n": 1
+    },
+    {
+     "name": "Andranik",
+     "n": 1
+    },
+    {
+     "name": "Munia",
+     "n": 1
+    },
+    {
+     "name": "cris",
+     "n": 1
+    },
+    {
+     "name": "ColinG",
+     "n": 1
+    },
+    {
+     "name": "adalpari",
+     "n": 1
+    },
+    {
+     "name": "Natanael",
+     "n": 1
+    },
+    {
+     "name": "aye1995",
+     "n": 1
+    },
+    {
+     "name": "Sonoriuxo",
+     "n": 1
+    },
+    {
+     "name": "colonqn",
+     "n": 1
+    },
+    {
+     "name": "ellasevia",
+     "n": 1
+    },
+    {
+     "name": "mesiaca",
+     "n": 1
+    },
+    {
+     "name": "JJGuzman",
+     "n": 1
+    },
+    {
+     "name": "FiRez",
+     "n": 1
+    },
+    {
+     "name": "Virgilia",
+     "n": 1
+    },
+    {
+     "name": "djoco13",
+     "n": 1
+    },
+    {
+     "name": "luispotro",
+     "n": 1
+    },
+    {
+     "name": "Takato",
+     "n": 1
+    },
+    {
+     "name": "africanus",
+     "n": 1
+    },
+    {
+     "name": "krash",
+     "n": 1
+    },
+    {
+     "name": "wiichi",
+     "n": 1
+    },
+    {
+     "name": "Kunstliebhaber",
+     "n": 1
+    },
+    {
+     "name": "Max101",
+     "n": 1
+    },
+    {
+     "name": "sinequanon28",
+     "n": 1
+    },
+    {
+     "name": "atomsk",
+     "n": 1
+    },
+    {
+     "name": "Peripes",
+     "n": 1
+    },
+    {
+     "name": "Mar1L",
+     "n": 1
+    },
+    {
+     "name": "Tono",
+     "n": 1
+    },
+    {
+     "name": "Lalourquieta",
+     "n": 1
+    },
+    {
+     "name": "luischir",
+     "n": 1
+    },
+    {
+     "name": "ProfessorAntonnio",
+     "n": 1
+    },
+    {
+     "name": "MilkFrosties",
+     "n": 1
+    },
+    {
+     "name": "Luiaard",
+     "n": 1
+    },
+    {
+     "name": "Grst4Ntmlgystz485791",
+     "n": 1
+    },
+    {
+     "name": "Niki_Pechlivanidi",
+     "n": 1
+    },
+    {
+     "name": "andrea_mar_s",
+     "n": 1
+    },
+    {
+     "name": "mamat",
+     "n": 1
+    },
+    {
+     "name": "hermeneggu",
+     "n": 1
+    },
+    {
+     "name": "Fernanto",
+     "n": 1
+    },
+    {
+     "name": "Raimondi",
+     "n": 1
+    },
+    {
+     "name": "princesamee",
+     "n": 1
+    },
+    {
+     "name": "Crul",
+     "n": 1
+    },
+    {
+     "name": "Zifre",
+     "n": 1
+    },
+    {
+     "name": "mrc3306",
+     "n": 1
+    },
+    {
+     "name": "azulmarino",
+     "n": 1
+    },
+    {
+     "name": "abriga",
+     "n": 1
+    },
+    {
+     "name": "nata23",
+     "n": 1
+    },
+    {
+     "name": "ffuentes",
+     "n": 1
+    },
+    {
+     "name": "lorcon",
+     "n": 1
+    },
+    {
+     "name": "negativeclock",
+     "n": 1
+    },
+    {
+     "name": "raghebaraby",
+     "n": 1
+    },
+    {
+     "name": "Khelm",
+     "n": 1
+    },
+    {
+     "name": "Joseshka",
+     "n": 1
+    },
+    {
+     "name": "labatteg",
+     "n": 1
+    },
+    {
+     "name": "betigre",
+     "n": 1
+    },
+    {
+     "name": "zukerx",
+     "n": 1
+    },
+    {
+     "name": "Mauricio",
+     "n": 1
+    },
+    {
+     "name": "Eddygp",
+     "n": 1
+    },
+    {
+     "name": "Ruthdq",
+     "n": 1
+    },
+    {
+     "name": "th78952",
+     "n": 1
+    },
+    {
+     "name": "rafaeld4",
+     "n": 1
+    },
+    {
+     "name": "ArtVel",
+     "n": 1
+    },
+    {
+     "name": "JRB",
+     "n": 1
+    },
+    {
+     "name": "mctpyt",
+     "n": 1
+    },
+    {
+     "name": "Tanaka",
+     "n": 1
+    },
+    {
+     "name": "Curro",
+     "n": 1
+    },
+    {
+     "name": "User87977",
+     "n": 1
+    },
+    {
+     "name": "dagonzalezce",
+     "n": 1
+    },
+    {
+     "name": "qwertzu",
+     "n": 1
+    },
+    {
+     "name": "enebi",
+     "n": 1
+    },
+    {
+     "name": "Caduga",
+     "n": 1
+    },
+    {
+     "name": "opalandwoof",
+     "n": 1
+    },
+    {
+     "name": "apzzd",
+     "n": 1
+    },
+    {
+     "name": "pierrephi",
+     "n": 1
+    },
+    {
+     "name": "MondCivitano",
+     "n": 1
+    },
+    {
+     "name": "U2FS",
+     "n": 1
+    },
+    {
+     "name": "gorkaazk",
+     "n": 1
+    },
+    {
+     "name": "inmadom",
+     "n": 1
+    },
+    {
+     "name": "reignerok",
+     "n": 1
+    },
+    {
+     "name": "MiGatoSeneca",
+     "n": 1
+    },
+    {
+     "name": "Dasmandr",
+     "n": 1
+    },
+    {
+     "name": "dexiee",
+     "n": 1
+    },
+    {
+     "name": "plinplin",
+     "n": 1
+    },
+    {
+     "name": "nerveimpulse",
+     "n": 1
+    },
+    {
+     "name": "frangio",
+     "n": 1
+    },
+    {
+     "name": "isrtcify",
+     "n": 1
+    },
+    {
+     "name": "belgavox",
+     "n": 1
+    },
+    {
+     "name": "Emmanuel_Maldini",
+     "n": 1
+    },
+    {
+     "name": "Grim_fandango",
+     "n": 1
+    },
+    {
+     "name": "alekso",
+     "n": 1
+    },
+    {
+     "name": "heyanapau",
+     "n": 1
+    },
+    {
+     "name": "Asynja",
+     "n": 1
+    },
+    {
+     "name": "maaster",
+     "n": 1
+    },
+    {
+     "name": "ittevo",
+     "n": 1
+    },
+    {
+     "name": "nicolita",
+     "n": 1
+    },
+    {
+     "name": "Helio",
+     "n": 1
+    },
+    {
+     "name": "yetinieves",
+     "n": 1
+    },
+    {
+     "name": "uptonpark1973",
+     "n": 1
+    },
+    {
+     "name": "AbMichael",
+     "n": 1
+    },
+    {
+     "name": "dfrankmv",
+     "n": 1
+    },
+    {
+     "name": "rccg",
+     "n": 1
+    },
+    {
+     "name": "SemperAutumnus",
+     "n": 1
+    },
+    {
+     "name": "escudo119",
+     "n": 1
+    },
+    {
+     "name": "muitoazul",
+     "n": 1
+    },
+    {
+     "name": "emitxab111",
+     "n": 1
+    },
+    {
+     "name": "Viqui",
+     "n": 1
+    },
+    {
+     "name": "manito88",
+     "n": 1
+    },
+    {
+     "name": "abiniz",
+     "n": 1
+    },
+    {
+     "name": "deniko",
+     "n": 1
+    },
+    {
+     "name": "superbolo",
+     "n": 1
+    },
+    {
+     "name": "darkzeta",
+     "n": 1
+    },
+    {
+     "name": "takiras",
+     "n": 1
+    },
+    {
+     "name": "Mazarilla",
+     "n": 1
+    },
+    {
+     "name": "Jormomo",
+     "n": 1
+    },
+    {
+     "name": "pilotcdmark",
+     "n": 1
+    },
+    {
+     "name": "parheliu",
+     "n": 1
+    },
+    {
+     "name": "rafmen",
+     "n": 1
+    },
+    {
+     "name": "mushashi",
+     "n": 1
+    },
+    {
+     "name": "lilianmtzc",
+     "n": 1
+    },
+    {
+     "name": "erjabi",
+     "n": 1
+    },
+    {
+     "name": "rafmagon",
+     "n": 1
+    },
+    {
+     "name": "crnel727",
+     "n": 1
+    },
+    {
+     "name": "aldomora",
+     "n": 1
+    },
+    {
+     "name": "lost",
+     "n": 1
+    },
+    {
+     "name": "melisa",
+     "n": 1
+    },
+    {
+     "name": "JLGQ_",
+     "n": 1
+    },
+    {
+     "name": "THURET",
+     "n": 1
+    },
+    {
+     "name": "catcher",
+     "n": 1
+    },
+    {
+     "name": "Amerika",
+     "n": 1
+    },
+    {
+     "name": "halime",
+     "n": 1
+    },
+    {
+     "name": "Calvo",
+     "n": 1
+    },
+    {
+     "name": "ludtaylor",
+     "n": 1
+    },
+    {
+     "name": "Saaana",
+     "n": 1
+    },
+    {
+     "name": "mferrer0000",
+     "n": 1
+    },
+    {
+     "name": "feyMorgaina",
+     "n": 1
+    },
+    {
+     "name": "indef",
+     "n": 1
+    },
+    {
+     "name": "Eledefe",
+     "n": 1
+    },
+    {
+     "name": "Hamidb",
+     "n": 1
+    },
+    {
+     "name": "carloschunga",
+     "n": 1
+    },
+    {
+     "name": "Ee_un",
+     "n": 1
+    },
+    {
+     "name": "jmhk",
+     "n": 1
+    },
+    {
+     "name": "alchzh",
+     "n": 1
+    },
+    {
+     "name": "Rebolicas",
+     "n": 1
+    },
+    {
+     "name": "Sabir",
+     "n": 1
+    },
+    {
+     "name": "Stuhr",
+     "n": 1
+    },
+    {
+     "name": "theHydroLance",
+     "n": 1
+    },
+    {
+     "name": "TRANG",
+     "n": 1
+    },
+    {
+     "name": "spanishenglish",
+     "n": 1
+    },
+    {
+     "name": "winice",
+     "n": 1
+    },
+    {
+     "name": "macl",
+     "n": 1
+    },
+    {
+     "name": "fran_trujillo",
+     "n": 1
+    },
+    {
+     "name": "Naaa77",
+     "n": 1
+    },
+    {
+     "name": "alicia",
+     "n": 1
+    },
+    {
+     "name": "inmachan",
+     "n": 1
+    },
+    {
+     "name": "chaos",
+     "n": 1
+    },
+    {
+     "name": "pisclis",
+     "n": 1
+    },
+    {
+     "name": "nevlanthiriel",
+     "n": 1
+    },
+    {
+     "name": "Arraroak",
+     "n": 1
+    },
+    {
+     "name": "qweruiop",
+     "n": 1
+    },
+    {
+     "name": "Keiner",
+     "n": 1
+    },
+    {
+     "name": "Ephraim",
+     "n": 1
+    },
+    {
+     "name": "Coilet",
+     "n": 1
+    },
+    {
+     "name": "nullsoul9",
+     "n": 1
+    },
+    {
+     "name": "tatianangel",
+     "n": 1
+    },
+    {
+     "name": "Amymps1",
+     "n": 1
+    },
+    {
+     "name": "rainbyte",
+     "n": 1
+    },
+    {
+     "name": "Georgelliot",
+     "n": 1
+    },
+    {
+     "name": "bax_je",
+     "n": 1
+    },
+    {
+     "name": "pinfano",
+     "n": 1
+    },
+    {
+     "name": "joaquin26",
+     "n": 1
+    },
+    {
+     "name": "mauro98",
+     "n": 1
+    },
+    {
+     "name": "tulakalbeyo",
+     "n": 1
+    },
+    {
+     "name": "adamtrousers",
+     "n": 1
+    },
+    {
+     "name": "nonong",
+     "n": 1
+    },
+    {
+     "name": "NFWord",
+     "n": 1
+    },
+    {
+     "name": "SeaLiteral",
+     "n": 1
+    },
+    {
+     "name": "kremel",
+     "n": 1
+    },
+    {
+     "name": "flaviaelizabeth",
+     "n": 1
+    },
+    {
+     "name": "mraz",
+     "n": 1
+    }
+   ]
+  }
+ },
+ "built": "2026-11-15",
+ "sources": [
+  {
+   "name": "Tatoeba",
+   "what": "Example sentences and English translations",
+   "license": "CC-BY 2.0 FR",
+   "url": "https://tatoeba.org"
+  },
+  {
+   "name": "Wiktionary (via Kaikki.org machine-readable extracts)",
+   "what": "Words, glosses, romanisation, IPA, usage examples",
+   "license": "CC-BY-SA 4.0",
+   "url": "https://kaikki.org"
+  },
+  {
+   "name": "FrequencyWords by Hermit Dave (OpenSubtitles 2018)",
+   "what": "Word-frequency ranking for Spanish, Persian, Urdu",
+   "license": "CC-BY-SA 4.0",
+   "url": "https://github.com/hermitdave/FrequencyWords"
+  },
+  {
+   "name": "Noto Nastaliq Urdu, Noto Naskh Arabic",
+   "what": "Bundled fonts",
+   "license": "SIL OFL 1.1",
+   "url": "https://fonts.google.com/noto"
+  },
+  {
+   "name": "Polyglot course units",
+   "what": "Grammar notes, examples, dialogues, readings, exam tasks",
+   "license": "Original content written for this project (MIT)",
+   "url": ""
+  }
+ ]
+}

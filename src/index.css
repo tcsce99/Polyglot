@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #f5f6f8; --surface: #ffffff; --ink: #14171c; --muted: #5f6b7a; --line: #dfe3e8;
+  --brand: #4338ca; --brand-soft: #e7e6fb; --ok: #15803d; --ok-soft: #dcf5e4;
+  --bad: #c62828; --bad-soft: #fde4e4; --warn: #b45309; --warn-soft: #fdf0d5;
+  --scale: 1;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117; --surface: #161b22; --ink: #e6edf3; --muted: #9aa5b1; --line: #2d343d;
+    --brand: #8b93ff; --brand-soft: #23264a; --ok: #4ade80; --ok-soft: #12301f;
+    --bad: #f87171; --bad-soft: #3a1717; --warn: #fbbf24; --warn-soft: #3a2c0c;
+  }
+}
+html { font-size: calc(16px * var(--scale)); }
+body { background: var(--bg); color: var(--ink); font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; -webkit-tap-highlight-color: transparent; }
+:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
+
+/* Target-language text. Urdu uses Nastaliq (needs generous line-height), Persian uses Naskh. */
+.tl-urd { font-family: 'Noto Nastaliq Urdu', 'Noto Naskh Arabic', serif; line-height: 2.3; font-size: 1.15em; }
+.tl-pes { font-family: 'Noto Naskh Arabic', 'Vazirmatn', serif; line-height: 1.9; font-size: 1.2em; }
+.tl-spa, .tl-mlt { font-family: inherit; }
+
+@layer components {
+  .card { @apply bg-surface border border-line rounded-2xl p-4; }
+  .btn { @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 font-semibold border border-line bg-surface text-ink transition active:scale-[.98] disabled:opacity-50 disabled:pointer-events-none; }
+  .btn-primary { @apply btn bg-brand text-white border-transparent; }
+  .btn-ghost { @apply btn border-transparent bg-transparent; }
+  .chip { @apply inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold bg-brand-soft text-brand; }
+  .opt { @apply w-full text-start rounded-xl border border-line bg-surface px-4 py-3 transition; }
+  .opt-sel { @apply border-brand bg-brand-soft; }
+  .opt-ok { @apply border-ok bg-ok-soft; }
+  .opt-bad { @apply border-bad bg-bad-soft; }
+  .input { @apply w-full rounded-xl border border-line bg-surface px-3 py-2.5 text-ink; }
+}
+@media (prefers-color-scheme: dark) { .btn-primary { color: #0d1117; } }
