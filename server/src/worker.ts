@@ -50,7 +50,7 @@ function levelGuide(level: string): string {
   return 'C1/C2: fully natural, idiomatic, nuanced language. Explanations: concise, with register and nuance notes.';
 }
 
-async function ask(env: Env, system: string, user: Anthropic.Beta.BetaMessageParam[], schema: object, maxTokens: number, context?: string): Promise<unknown> {
+async function ask(env: Env, system: string, user: Anthropic.Beta.BetaMessageParam[], schema: Record<string, unknown>, maxTokens: number, context?: string): Promise<unknown> {
   const client = new Anthropic({ apiKey: env.ANTHROPIC_API_KEY });
   const res = await client.beta.messages.create({
     model: env.MODEL || 'claude-opus-5-5',
