@@ -17,6 +17,7 @@ export const SHARED: Record<string, string> = {
   negation: 'Negation',
   questions: 'Questions',
   pronouns: 'Pronouns',
+  'object-pronouns': 'Object pronouns',
   'articles-gender': 'Articles, gender & agreement',
   plurals: 'Plurals',
   adjectives: 'Adjectives',
@@ -44,7 +45,7 @@ export const EXTRA: Record<LangId, Record<string, string>> = {
   spa: {
     'ser-estar': 'Ser vs. estar', 'gustar-verbs': 'Gustar-type verbs', reflexives: 'Reflexive verbs',
     'preterite-imperfect': 'Preterite vs. imperfect', 'por-para': 'Por vs. para',
-    'object-pronouns': 'Object pronouns', subjunctive: 'Subjunctive',
+    subjunctive: 'Subjunctive',
   },
   urd: {
     postpositions: 'Postpositions & oblique case', 'ergative-ne': 'Ergative نے', 'compound-verbs': 'Compound verbs',
