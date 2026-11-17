@@ -1,0 +1,17 @@
+name = "polyglot-tutor"
+main = "src/worker.ts"
+compatibility_date = "2026-01-01"
+
+# Workers AI binding: used for the Whisper speech-to-text fallback (needed for Maltese,
+# and for browsers without the Web Speech API). No extra key required.
+[ai]
+binding = "AI"
+
+[vars]
+# Comma-separated list of origins allowed to call the proxy, e.g. "https://you.github.io".
+ALLOWED_ORIGINS = "*"
+MODEL = "claude-opus-5-5"
+
+# Secrets (set with `wrangler secret put <NAME>`):
+#   ANTHROPIC_API_KEY  – required
+#   APP_TOKEN          – optional shared passphrase; if set, the app must send it (Settings → Tutor access code)

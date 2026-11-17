@@ -1,5 +1,8 @@
 # Polyglot — Functional Specification
 
+> **Scope note (November 2026):** the launch languages are now Maltese, Urdu, Persian and Spanish. Language-specific items below for other languages are historical. Additions since this spec was written: a per-language placement test, lesson test-outs, CEFR-style level exams (A1–C2), and a quiet mode that removes all audio. The mastery model chosen in §6 is the ELO-style exponential update documented in `src/core/mastery/mastery.ts`.
+
+
 ## 1. Users & Modes
 
 - Single-user first (local profile), multi-profile later.

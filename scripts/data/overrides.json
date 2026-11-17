@@ -1,0 +1,30 @@
+{
+  "_comment": "Hand corrections for very frequent function words whose first Wiktionary sense is misleading. null = leave out of the deck (taught in the course units instead, or an inflected form).",
+  "spa": {
+    "la": "the (feminine); her, it", "lo": "it, him; the (neuter)", "yo": "I", "te": "you (object); yourself", "mi": "my", "su": "his, her, its, their; your (formal)",
+    "ellas": "they (feminine)", "al": "to the", "sé": "I know", "he": null, "son": null, "ese": "that", "sus": "his, her, their, your (with plural nouns)", "va": null,
+    "ni": "neither, nor", "sabes": null, "puede": null, "vamos": "let's go", "este": "this; east", "esto": "this (neuter)", "le": "to him, to her, to you (formal)",
+    "se": "oneself; himself, herself, themselves", "nos": "us; ourselves", "tú": "you (informal)", "usted": "you (formal)", "dos": "two", "por": "by, for, through",
+    "a": "to, at", "hace": "ago", "un": "a, an", "una": "a, an (feminine); one", "qué": "what", "mí": "me (after prepositions)", "del": "of the, from the", "era": null
+  },
+  "pes": {
+    "رو": "face; (colloquial) object marker", "من": "I, me", "می": null, "ما": "we, us", "بود": null, "باشه": "okay, all right (colloquial)", "نیست": "is not",
+    "کنه": null, "ـی": null, "ی": null, "الان": "now", "طوی": null, "منو": "menu", "بهت": null, "کرد": null, "را": "(marks a definite direct object)", "هیچ": "none, nothing, any",
+    "بیا": "come!", "کردی": null, "دست": "hand", "ها": null, "ای": "O, hey (vocative)", "که": "that, which, who", "به": "to", "نه": "no; not; nine", "کی": "when?; who?",
+    "مثل": "like, similar to", "هم": "also, too", "تو": "you (informal singular)", "این": "this", "آن": "that", "هست": "is, exists; there is", "حرف": "speech, talk; letter"
+  },
+  "urd": {
+    "ہے": "is", "ہیں": "are", "آپ": "you (formal)", "تم": "you (informal)", "تو": "you (intimate); then, so", "گیا": null, "گے": null, "دیا": "lamp",
+    "نے": "(ergative marker after the subject of perfective transitive verbs)", "ہم": "we, us", "ان": "them, those (oblique)", "اس": "him, her, it; this, that (oblique)",
+    "وہ": "he, she, it, they; that", "یہ": "this; he, she, it (near)", "میں": "I; in", "کا": "of ('s)", "کو": "to (object marker)", "سے": "from, by, with, than",
+    "اور": "and; more", "ہمارا": "our, ours", "تمہارا": "your, yours (informal)", "میرا": "my, mine", "طور": "way, manner", "جی": "yes (polite); heart", "اگر": "if",
+    "عیسوی": null, "اپنا": "one's own", "جو": "who, which (relative)", "کبھی": "ever, sometimes", "وجہ": "reason, cause", "ہوا": "air, wind"
+  },
+  "mlt": {
+    "u": "and", "għal": "for", "fuq": "on, above", "ma": "not (with -x on the verb)", "tiegħek": "your, yours (singular)", "tagħkom": "your, yours (plural)",
+    "mhux": "not (with nouns and adjectives)", "biex": "in order to, so that", "b": "with, by", "hemm": "there; there is, there are", "għandi": "I have", "għandha": "she has",
+    "kien": "to be (he was)", "wieħed": "one", "li": "that, which, who", "kif": "how", "kollu": "all, whole", "meta": "when", "kemm": "how much, how many", "dejjem": "always",
+    "biss": "only", "qabel": "before", "tnejn": "two", "fis-skiet": null, "ejn": null, "talahawn": null, "filli": null, "tiex": null, "għalli": null, "fuqiex": null,
+    "daqshekk": "this much, so much", "lil": "to (marks a person as object)", "dwar": "about, concerning", "ra": "to see", "ta": "to give", "jaf": "to know", "reġa": "to do again; to return"
+  }
+}
